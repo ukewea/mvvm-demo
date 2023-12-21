@@ -20,3 +20,20 @@
 5. 當 Baud Rate 參數在上面的表格被修改時，TableViewViewModel 修改 Model 的內容。
 6. Model 會告知 BottomViewViewModel 內容有更新。
 7. BottomViewViewModel 更新其 BaudRateRange 屬性，觸發 View 的更新。
+
+```
+                MainWindow
+              /            \
+             /              \
+            /                \
+         DataGrid         BaudRateRange
+         /                     \
+    TableViewViewModel    BottomViewViewModel
+          \                     /
+           \                   /
+            \                 /
+             \               /
+              \             /
+               \           /
+                 Parameter
+```
